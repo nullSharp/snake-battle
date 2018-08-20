@@ -209,6 +209,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114437230792878958, guid: 6967c654d25004001a9f2bbe3a2e3361,
+        type: 2}
+      propertyPath: m_Text
+      value: "\u0410\u0440\u0435\u043D\u0430"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6967c654d25004001a9f2bbe3a2e3361, type: 2}
   m_IsPrefabParent: 0
@@ -277,7 +282,7 @@ Prefab:
     - target: {fileID: 224328191357746390, guid: 785bfc9c61d0d4cbda7cbd1bf69fe9b8,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 224328191357746390, guid: 785bfc9c61d0d4cbda7cbd1bf69fe9b8,
         type: 2}
@@ -408,7 +413,7 @@ RectTransform:
   m_Children:
   - {fileID: 707633347}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -560,6 +565,18 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
+--- !u!114 &707633351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 707633348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5414740229414766bb07cfbe9c7d468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mySnakesButton: {fileID: 890703115}
 --- !u!1001 &858837645
 Prefab:
   m_ObjectHideFlags: 0
@@ -657,9 +674,20 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114437230792878958, guid: 6967c654d25004001a9f2bbe3a2e3361,
+        type: 2}
+      propertyPath: m_Text
+      value: "\u041C\u043E\u0438 \u0437\u043C\u0435\u0439\u043A\u0438"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6967c654d25004001a9f2bbe3a2e3361, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &890703115 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114611678415864992, guid: 785bfc9c61d0d4cbda7cbd1bf69fe9b8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1781845548}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1398884224
 Prefab:
   m_ObjectHideFlags: 0
@@ -725,7 +753,7 @@ Prefab:
     - target: {fileID: 224328191357746390, guid: 785bfc9c61d0d4cbda7cbd1bf69fe9b8,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 224328191357746390, guid: 785bfc9c61d0d4cbda7cbd1bf69fe9b8,
         type: 2}
@@ -848,7 +876,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1741961681
 GameObject:
@@ -919,6 +947,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 707633347}
     m_Modifications:
+    - target: {fileID: 114611678415864992, guid: 785bfc9c61d0d4cbda7cbd1bf69fe9b8,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 224328191357746390, guid: 785bfc9c61d0d4cbda7cbd1bf69fe9b8,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -977,7 +1010,7 @@ Prefab:
     - target: {fileID: 224328191357746390, guid: 785bfc9c61d0d4cbda7cbd1bf69fe9b8,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 224328191357746390, guid: 785bfc9c61d0d4cbda7cbd1bf69fe9b8,
         type: 2}
@@ -1008,6 +1041,21 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114611678415864992, guid: 785bfc9c61d0d4cbda7cbd1bf69fe9b8,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114611678415864992, guid: 785bfc9c61d0d4cbda7cbd1bf69fe9b8,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114611678415864992, guid: 785bfc9c61d0d4cbda7cbd1bf69fe9b8,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 785bfc9c61d0d4cbda7cbd1bf69fe9b8, type: 2}
