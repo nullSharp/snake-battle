@@ -5,6 +5,7 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets/Code" t="Include">
+        <e p="InstantToggle.cs" t="Include" />
         <e p="MainMenu.cs" t="Include" />
       </e>
       <e p="Library" t="ExcludeRecursive" />
