@@ -13,7 +13,6 @@ namespace Code {
         }
 
 
-//        public override void OnPointerUp (PointerEventData eventData) {}
         public override void OnPointerClick (PointerEventData eventData) {}
 
     }
