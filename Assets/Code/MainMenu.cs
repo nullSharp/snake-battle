@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Code;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
