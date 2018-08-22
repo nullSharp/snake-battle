@@ -438,7 +438,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1954804505609144, guid: 6967c654d25004001a9f2bbe3a2e3361, type: 2}
       propertyPath: m_Name
-      value: Text (2)
+      value: Info
       objectReference: {fileID: 0}
     - target: {fileID: 114437230792878958, guid: 6967c654d25004001a9f2bbe3a2e3361,
         type: 2}
@@ -788,7 +788,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1954804505609144, guid: 6967c654d25004001a9f2bbe3a2e3361, type: 2}
       propertyPath: m_Name
-      value: Text (1)
+      value: Id
       objectReference: {fileID: 0}
     - target: {fileID: 114437230792878958, guid: 6967c654d25004001a9f2bbe3a2e3361,
         type: 2}
@@ -1469,7 +1469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 737774303}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: Horizontal Group
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1727,6 +1727,10 @@ Prefab:
         type: 2}
       propertyPath: m_FontData.m_Alignment
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954804505609144, guid: 6967c654d25004001a9f2bbe3a2e3361, type: 2}
+      propertyPath: m_Name
+      value: Name
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6967c654d25004001a9f2bbe3a2e3361, type: 2}
@@ -2122,6 +2126,7 @@ GameObject:
   - component: {fileID: 1079488285}
   - component: {fileID: 1079488284}
   - component: {fileID: 1079488283}
+  - component: {fileID: 1079488287}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2205,6 +2210,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1079488287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1079488282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19ca62bd259342fabf27d4956b3e53eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _toggleGroup: {fileID: 2022939255}
+  _snakeButtonPrefab: {fileID: 1938793055059254, guid: 5960d919483784371a78d0f2faeb75ba,
+    type: 2}
+  _list: {fileID: 2022939252}
 --- !u!1 &1151925069
 GameObject:
   m_ObjectHideFlags: 0
@@ -2215,7 +2235,7 @@ GameObject:
   - component: {fileID: 1151925070}
   - component: {fileID: 1151925071}
   m_Layer: 5
-  m_Name: VerticalGroup
+  m_Name: Vertical Group
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2548,7 +2568,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1391203745}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: Spacer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2703,7 +2723,7 @@ GameObject:
   - component: {fileID: 1504456565}
   - component: {fileID: 1504456564}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3030,7 +3050,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1954804505609144, guid: 6967c654d25004001a9f2bbe3a2e3361, type: 2}
       propertyPath: m_Name
-      value: Text (1)
+      value: RightText
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6967c654d25004001a9f2bbe3a2e3361, type: 2}
@@ -3147,6 +3167,10 @@ Prefab:
       propertyPath: m_FontData.m_Alignment
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1954804505609144, guid: 6967c654d25004001a9f2bbe3a2e3361, type: 2}
+      propertyPath: m_Name
+      value: LeftText
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6967c654d25004001a9f2bbe3a2e3361, type: 2}
   m_IsPrefabParent: 0
@@ -3162,6 +3186,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1558451103}
     m_Modifications:
+    - target: {fileID: 114611678415864992, guid: 785bfc9c61d0d4cbda7cbd1bf69fe9b8,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224328191357746390, guid: 785bfc9c61d0d4cbda7cbd1bf69fe9b8,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -3252,6 +3281,31 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114611678415864992, guid: 785bfc9c61d0d4cbda7cbd1bf69fe9b8,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114611678415864992, guid: 785bfc9c61d0d4cbda7cbd1bf69fe9b8,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114611678415864992, guid: 785bfc9c61d0d4cbda7cbd1bf69fe9b8,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1079488287}
+    - target: {fileID: 114611678415864992, guid: 785bfc9c61d0d4cbda7cbd1bf69fe9b8,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AddSnakeButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 114611678415864992, guid: 785bfc9c61d0d4cbda7cbd1bf69fe9b8,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 785bfc9c61d0d4cbda7cbd1bf69fe9b8, type: 2}
   m_IsPrefabParent: 0
@@ -3270,6 +3324,7 @@ GameObject:
   - component: {fileID: 2022939252}
   - component: {fileID: 2022939254}
   - component: {fileID: 2022939253}
+  - component: {fileID: 2022939255}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -3284,7 +3339,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2022939251}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 48, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 610949389}
@@ -3292,7 +3347,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 48}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2022939253
@@ -3330,6 +3385,18 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 0
+--- !u!114 &2022939255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2022939251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AllowSwitchOff: 1
 --- !u!1001 &2084753094
 Prefab:
   m_ObjectHideFlags: 0
